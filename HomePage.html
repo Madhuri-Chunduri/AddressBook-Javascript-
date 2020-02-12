@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="HomePage.css">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> 
+        <link href='https://fonts.googleapis.com/css?family=Nanum Gothic' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="AddressBookScripts.js"></script>
+    </head>
+    <body>
+        <div class="pageContent">
+            <div class="mainHeading">
+                Address Book
+            </div>
+
+            <div class="horizontalNavigationBar">
+                <ul>
+                    <li><a id="home">Home</a></li>
+                    <li><a id="addContact">+Add</a></li>
+                    <li><img src="blog-icon.png" alt="bing-logo"></li>
+                </ul>
+            </div>
+
+            <div class="contactList">
+                <p class="contact">CONTACTS</p>
+                <ul id="contactsList">
+                </ul>
+            </div>
+
+            <div id="addContactForm" class="hideContent detailsForm">
+                <form id="addContactDetails">
+                    <input class="hideContent" type="number" name="id" id="id">
+                    <label>Name *</label>
+                    <label class="validationMessage hideContent" id="nameValidationMessage"></label><br>
+                    <input type="text" name="name" id="name" onblur="methods.validateName()" required><br>
+                    <label>Email *</label>
+                    <label class="validationMessage hideContent" id="emailValidationMessage"></label><br>
+                    <input type="email" name="email" id="email" onblur="methods.validateEmail()" required><br>
+                    <div class="table">
+                        <span class="box">
+                            <label>Mobile *</label>
+                            <label class="validationMessage hideContent" id="mobileValidationMessage"></label><br>
+                        </span>
+                        <span>
+                            <label>Landline</label>
+                        </span>
+                    </div>
+                    <span class="box">
+                        <input type="text" name="mobile" onblur="methods.validateMobileNumber()" id="mobile" required>
+                    </span>
+                    <span class="box">
+                        <input type="text" name="landLine" id="landline">
+                    </span><br>
+                    <label>Website</label><br>
+                    <input type="text" name="website" id="website"><br>
+                    <label>Address</label><br>
+                    <textarea name="address" id="address"></textarea><br><br>
+                    <input type="button" id="submitDetails"/>
+                  </form>
+            </div>
+
+            <div id="contactInformation">
+                <div class="displaySelectedContact">
+                    <input class="hideContent" type="number" name="id" id="id">
+                    <p id="name"></p>
+                    <img class="icons" src="Edit-icon.png" alt="edit-icon"><button id="editContact">Edit</button>
+                    <img class="icons" src="delete-icon.png" alt="delete-icon"><button id="deleteContact">Delete</button>
+                </div>
+                <div class="displayEmail">
+                    <p>Email :  <p id="email"></p></p>
+                </div>
+                <div class="contactDetails">
+                    <div class="mobile"><p>Mobile :  <p id="mobile"></p></p></div>
+                    <div class="landline"><p>Landline :  <p id="landline"></p></p></div>
+                </div>
+                <div class="website">
+                    <p>Website :  <p id="website"></p></p>
+                </div>
+                <div class="Address">
+                    <p>Address :  <pre id="address"></pre></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

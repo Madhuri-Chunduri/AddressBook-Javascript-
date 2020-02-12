@@ -1,0 +1,234 @@
+.pageContent
+{
+    font-family: 'Century Gothic';
+    margin: 0px;
+}
+
+body
+{
+    margin: 0px;
+}
+
+.mainHeading
+{
+    background-color: rgb(51,153,204);
+    font-size: 50px ;
+    color:white;
+    padding: 30px 0px 30px 20px;
+}
+
+.horizontalNavigationBar ul{
+    margin-top: 0px;
+    background-color: black;
+    height: 35px;
+    color: white;
+    list-style: none;
+    font-size: 18px;
+    padding : 0px;
+}
+
+.horizontalNavigationBar li{
+    float : left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Calibri';
+    padding : 7px 0px 10px 25px;
+}
+
+.horizontalNavigationBar li:last-child{
+    float: right;
+    padding-right: 30px;
+}
+
+.horizontalNavigationBar a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.contactList
+{
+    margin-left : 25px;
+    float: left;
+    font-family: "Calibri";
+}
+
+.contactList ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.contactList li{
+    border: 1px solid lightgray;
+    padding-left: 12px;
+    padding-right: 150px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.contactList li:hover {
+    background-color: #CEE7F2;
+} 
+.highlight{
+    background-color: #CEE7F2;
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+pre{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: "Nanum Gothic";
+}
+.contact p{
+    margin-top : 0px;
+}
+.name{
+    font-size: 30px;
+    font-style: lighter;
+}
+
+.contact{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.details{
+    padding : 0px 50px;
+    margin-left: 500px;
+    font-size: 20px;
+}
+
+.details a{
+    padding : 0 20px;
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.detailsForm{
+    padding:30px;
+    border: 1px solid white;
+    margin-left: 30%;
+    margin-top: 30px;
+    margin-right: 500px;
+    padding-bottom: 70px;
+    box-shadow: 5px 5px 20px 0px #000000;
+}
+
+.detailsForm input{
+    width: 85%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.detailsForm label{
+    width: 250px;
+}
+
+.detailsForm textarea{
+    width: 85%;
+    height: 80px;
+    resize: none;
+    border-color: black;
+}
+
+.detailsForm table{
+    width:93%;
+}
+
+#submitDetails{
+    padding: 10px;
+    background-color: #468C00;
+    color:white;
+    float: right;
+    border: none;
+    margin-right: 5px;
+    width : 20%;
+}
+
+.box{
+    display: inline-block;
+    width: 45%;
+    padding-right: 1%;
+}
+
+#contactInformation
+{
+    margin-left: 30%;
+    margin-top: 3%;
+    width : 60%;
+    font-family: "Nanum Gothic";
+}
+
+.displaySelectedContact
+{
+    display : flex;
+    padding-bottom: 10px;
+}
+
+.displaySelectedContact p{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-right : 20%;
+}
+
+.displaySelectedContact button
+{
+    border : 0px;
+    background-color: white;
+    height: 20px;
+    margin-top : 10px;
+    text-transform: uppercase;
+    font-family: "Nanum Gothic";
+    padding-right: 3%;
+    outline: none;
+}
+
+.displaySelectedContact img{
+    height : 15px;
+    padding-top : 10px;
+}
+
+.hideContent
+{
+    display:none;
+}
+
+.displayEmail
+{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.mobile
+{
+    display: flex;
+    padding-bottom : 0px;
+}
+
+.landline
+{
+    display: flex;
+}
+
+.website,.address
+{
+    display: flex;
+    padding-top: 10px;
+}
+
+.validationMessage
+{
+    color : red;
+}
